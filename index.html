@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--L'élément HTML <head> fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.-->
+
+<head>
+  <!--L'élément HTML <meta> représente toute information de métadonnées qui ne peut pas être représentée par un des éléments (<base>, <link>, <script>, <style> ou <title>)-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--L'élément <title> définit le titre du document (qui est affiché dans la barre de titre du navigateur ou dans l'onglet de la page). Cet élément ne peut contenir que du texte, les balises qu'il contiendrait seraient ignorées.-->
+  <title>Cours HTML</title>
+  <!--L'élément HTML <link> définit la relation entre le document courant et une ressource externe. Cet élément peut être utilisé pour définir un lien vers une feuille de style, vers les icônes utilisées en barre de titre ou comme icône d'application sur les appareils mobiles.-->
+  <link rel="shortcut icon" href="logo-html.png" />
+</head>
+<!--L'élément HTML <body> représente le contenu principal du document HTML. Il ne peut y avoir qu'un élément <body> par document.-->
+
+<body>
+  <!--L'interface Headers de l'API Fetch vous permet d'effectuer diverses actions sur les en-têtes de requête et de réponse HTTP. Ces actions incluent la récupération, la configuration, l’ajout et la suppression. -->
+  <header>
+    <h1><span>&#9758;</span> Texte - Titre H1</h1>
+    <!--L'élément HTML <p> représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace vertical, leur première ligne est également parfois indentée. Les paragraphes sont des éléments blocs.-->
+    <p>
+      Texte basique. <em>Voici un texte en italique.</em>
+      <strong>Et un texte en gras.</strong>
+      <span>L'élément en span ne revient pas à la ligne</span>
+    </p>
+    <p>Je crée ma <u>première</u> page web.
+      <strong>Des extensions interessantes:</strong>
+    <ul>
+      <li>Live Server</li>
+      <li>Prettier - Code formatter</li>
+      <li></li>
+    </ul>
+    </p>
+  </header>
+  <!--L'élément HTML <section> représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.-->
+  <section>
+    <!--L'élément HTML <div> (ou division) est le conteneur générique du contenu du flux. Il n'a aucun effet sur le contenu ou la mise en page tant qu'il n'est pas mis en forme d'une manière quelconque à l'aide de CSS.-->
+    <div>
+      <h2>Photo - Titre H2</h2>
+      <img src="Hipoyume.png" height="1500" alt="Cochon-qui-marche" </div>
+      <div>
+        <h3>Listes - Titre H3</h3>
+        <ul>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+        </ul>
+        <ol>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+          <li>OL = Ordered List</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableau - Titre H4</h4>
+        <table border="1" width="50%">
+          <!--Légende-->
+          <caption>
+            <strong>Population d'europe</strong>
+          </caption>
+          <!--En-tete-->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <!--Corps du tableau-->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Liens - Titre H5</h5>
+        <a href="http://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
+        <br />
+        <br />
+        <a href="http://www.toptal.com/designers/htmlarrows/symbols/" target="_blank">Icones en HTML</a>
+      </div>
+      <div>
+        <h6>Vidéo - Titre H6</h6>
+        <a href="http://https://pixabay.com/fr/" target="_blank">Vidéos d'illustration gratuite.</a>
+        <video src="Electronics - 5364.mp4" height="500" autoplay loop muted></video>
+      </div>
+  </section>
+  <br>
+  <!--Formulaire-->
+  <section>
+    <h2><strong><u>Formulaire:</u></strong></h2>
+    <form action="/action.php" method="post">
+      <label for="name">Nom </label><input id="name" type="text" placeholder="Entrez votre nom s'il vous plait.">
+      <br>
+      <label for="age">age</label><input id="age" type="number" min="0" max="80" step="1" value="18"
+        placeholder="Entrez votre age s'il vous plait."> ans.
+      <br>
+      <label for="gender">gender</label>
+      <select name="type" id="gender">
+        <option value="homme">Homme</option>
+        <!--La commande selected permet de sélectionner une proposition de base.-->
+        <option selected value="femme">Femme</option>
+        <option value="robot">Robot</option>
+        <option value="animal">Animal</option>
+      </select> <br>
+      <!--Input radio-->
+      <div>
+        <input type="radio" name="type" id="human">
+        <label for="human">Humain</label>
+        <!--La commande checked permet de sélectionner une proposition de base.-->
+        <input type="radio" name="type" id="dog" checked>
+        <label for="dog">Chien</label>
+
+        <input type="radio" name="type" id="cat">
+        <label for="cat">Chat</label>
+      </div>
+      <textarea cols="30" rows="10" placeholder="Entrez votre avis ici."></textarea><br>
+      <!--Input checkbox-->
+      <label><input type="checkbox" />Accepter les CGV =>
+      </label> <br> <br>
+      <input type="submit" value="Valider">
+    </form>
+  </section>
+  <br>
+  <!-- Mail & envoi de fichier -->
+  <footer>
+    <a href="mailto:hipoyume@gmail.com">Ecrivez moi!</a>&#128578;
+    <br>
+    <a href="notice.txt" download="Notice.">Voici la notice.</a>
+  </footer>
+</body>
+
+</html>

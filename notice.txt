@@ -1,0 +1,6 @@
+Ceci est une notice.
+*Petit astuce*
+Pour faire un commentaire, il y a plusieurs façons.
+soit, taper "<!--"Le commentaire"-->
+Soit, taper "Le commentaire", le sélectionner, puis appuyer sur ctrl + slash 
+ou alors juste la touche divisé du clavier numérique (ver num). 
